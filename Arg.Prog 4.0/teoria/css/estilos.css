@@ -1,0 +1,51 @@
+*{
+    color: yellow;
+}
+/** el '*' sirve como comodin para que se aplique en todos los elementos */
+p {
+    color: red;
+    width: 550px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    border:1px solid black;
+    /** padding: 20px; */ /** es el borde entre el contenido y el margen */
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    
+    /** margin: 30px; */
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    font-weight: bold;
+    color: blue;
+}
+
+section {
+    width:600px;
+    border: 10px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+/** slos # son para los ID, esto permite que se modifique solo por el ID */
+#mi_parrafo {
+    color: brown;
+    font-size: 23px;
+}
+
+/** esto es una clase en CSS */
+.estaesmiclase{
+    font-weight: bold;
+    color: lightblue;
+}
+/** aplica reglas a elementos */
+
+section h1{
+    font-size: 45px;
+}
+/**
+Comentario dentro de CSS
+*/

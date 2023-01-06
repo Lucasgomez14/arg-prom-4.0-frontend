@@ -1,0 +1,21 @@
+Glosario Elementos de HTML
+w3schools.com/html
+https://www.w3schools.com/html/html_blocks.asp Todos los elementos de bloque y línea
+
+
+
+H= Heading/Titular
+P= Parragraf/Parrafo
+src= Source/Fuente
+alt= alternative/Alternativo
+height/Altura
+Width/Ancho
+ul= unordered list/ Lista no ordenada
+span= contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.
+label/etiqueta
+placeholder= sirve para "dar una ayuda"
+controls= permite que el usuario permita controlar cualquier contenido multimedia(pausa, sonido, descarga, etc)
+
+web semantica= es lo que describe claramente el contenido para el navegador y el desarrollador
+
+open graph= es un protocolo para las redes sociales, que previsualiza una imagen de algún link.

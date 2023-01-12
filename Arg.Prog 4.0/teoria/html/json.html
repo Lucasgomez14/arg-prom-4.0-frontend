@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendiendojson</title>
+</head>
+<!-- JSON sirve para transportar información a través de objetos en txt, para luego transformar la información-->
+<body>
+    <p id="demo">
+
+    </p>
+    <script>
+        const persona= '{"nombre":"jose", "edad":30, "nacionalidad": "argentina"}';
+         const obj = JSON.parse(persona);
+         console.log(obj);
+
+        document.getElementById("demo").innerHTML = "Nombre: "+obj.nombre+"Edad: "+obj.edad+"Nacionalidad: "+obj.nacionalidad;
+    </script>
+
+    <!-- transmitir datos de otra página a esta-->
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+    </script>
+</body>
+</html>

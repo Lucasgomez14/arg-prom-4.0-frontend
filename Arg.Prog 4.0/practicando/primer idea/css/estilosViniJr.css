@@ -1,0 +1,44 @@
+figcaption {
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+.fotitoCuadro
+{
+    border: 1px solid white;
+    border-spacing: 0px;
+    padding: 5px; width: 3px; 
+    height:5px; 
+    text-align:center;
+}
+
+.encabezadoComp
+{
+    width: 130px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+@media (max-width: 575.98px) {
+
+    .encabezadoComp
+    {
+        width: 100px;
+        padding: 8px;
+        font-size: 11px;
+        text-align: left;
+    }
+
+        
+    }
+
+/** Ver estas funciones para ver como dejar más prolijo el cuadro */
+
+#fotovini
+{
+    text-align: center;
+    padding: 5px;
+    height: auto;
+    width: auto;
+}

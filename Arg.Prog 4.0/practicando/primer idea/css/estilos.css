@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 600px;
+    margin: auto;
+}
+figcaption {
+    color: black;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: left;
+}
+.classTituloPrincipal{
+    text-align: center;
+}
+.classSubtituloPrincipal{
+    font-size: 20px;
+    text-align:justify ;
+}
+
+.classParrafos{
+    color: black;
+    font-size: 17px;
+    text-align: justify;
+}
+section {
+    padding: 10px;
+    margin: 10px;
+    width:"600"; 
+    height:"500";
+
+}
+table {
+    width: 50%;
+    border: 1px solid #000;
+    border-spacing: 0;
+ }
+th, td {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0px;
+ }
+
+.classCuadritoEncabezado{
+    width: 30%;
+    text-align: left;
+}
+
+.classCuadritoImagen
+{
+    height: 15px; 
+    width: 15px;
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}

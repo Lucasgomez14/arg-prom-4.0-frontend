@@ -1,12 +1,37 @@
-/********************IDS********************/
-section {
-    background-image: url("imgpngs\fondo.jpg");
-       }
-
-#laterales
-{
-    background-color: red;
+/********************GENERAL********************/
+body {
+    background-image: url("https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/pruebaFondo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: scroll;    
 }
+
+/********************IDS DE DECORACION********************/
+#tituloCV
+{
+    text-align: center;
+    font-size: 80px;
+}
+#fotoCV
+{
+    margin-top: 50px;
+    margin-left: -40px;
+    border: 1px solid; color: black;
+}
+#lateralesIzquierdos
+{
+    border-right: 1px solid black;
+}
+
+#lateralesDerechos
+{
+    border-left: 1px solid black;
+}
+#lateralCentral
+{
+    border-bottom: 1px solid black;
+}
+
 #titulo
 {
     text-align: left;
@@ -16,7 +41,8 @@ section {
 {
     text-align: left;
     font-size: 55px;
-    color: rgb(103, 206, 103);
+    color: rgb(65, 77, 30);
+   
 }
 
 #textoParaIconitos
@@ -30,14 +56,6 @@ section {
     width: 25px;
 }
 
-#subtitulos
-{
-    color: black;
-    display: inline-block;
-    font-size: 40px;
-    vertical-align: top;
-    margin: 2px;
-}
 #margenesh5
 {
     margin-left: 55px;
@@ -49,12 +67,12 @@ section {
     opacity: 0.5;
 }
 
-/********************CLASES********************/
+/********************CLASES DE DECORACION********************/
 
 .margen
 {
     margin-top:15px;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 .iconitosPrincipales
 {
@@ -79,6 +97,20 @@ section {
     margin-left: 55px;
 }
 
+.subtitulos
+{
+    color: black;
+    display: inline-block;
+    font-size: 40px;
+    vertical-align: top;
+    margin: 2px;
+    border-bottom: 1px solid black;
+}
+.subtitulos:hover
+{
+    color: rgb(56, 55, 55);
+}
+
 .textoIconitos{
     color: black;
     opacity: 0.50;
@@ -97,10 +129,43 @@ section {
 {
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 24px;
 }
 .h5Educacion
 {
     margin-top: 17px;
 }
+
+/********************BOTONES********************/
+
+.acordeon{
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+
+.acordeon:hover
+{
+    transform: scale(1.01);
+}
+  .panel {
+    padding: 10px 20px;
+    display: none;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 20%;
+    border-left: 1px solid rgba(0, 0, 0, 0.354);
+    border-right: 1px solid rgba(0, 0, 0, 0.354);
+  }
+
+#botonesTransparentes
+  {
+    background-color: transparent;
+    border-radius: 15px;
+  }
 

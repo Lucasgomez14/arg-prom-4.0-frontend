@@ -1,4 +1,8 @@
 /********************GENERAL********************/
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
 body {
     background-image: url("https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/pruebaFondo.jpg");
     background-repeat: no-repeat;
@@ -10,7 +14,7 @@ body {
 #tituloCV
 {
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
 }
 #fotoCV
 {
@@ -46,7 +50,7 @@ body {
    
 }
 
-#textoParaIconitos
+.textoParaIconitos
 {
     display: inline-block;
     vertical-align: top;
@@ -71,6 +75,12 @@ body {
 
 /********************CLASES DE DECORACION********************/
 
+.navegacion
+{
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+}
 .margen
 {
     margin-top:15px;
@@ -191,7 +201,12 @@ body {
         background-size:cover;
         background-attachment: fixed;    
     }
+
     /********************IDS DE DECORACION PARA CELULARES********************/
+    .navegacion
+    {
+        font-size: 0px;
+    }
     #tituloCV
     {
         text-align: center;
@@ -384,6 +399,12 @@ body {
          background-size:cover;
          background-attachment: fixed;    
      }
+
+     .navegacion
+     {
+         font-size: 0px;
+     }
+     
      /********************IDS DE DECORACION PARA TABLETS*******************/
      #tituloCV
      {
@@ -546,7 +567,7 @@ body {
          overflow: hidden;
          border-radius: 15px;
          margin-left: 0px;
-         margin-right: -110px;
+         margin-right: -67px;
          border-left: 1px solid rgba(0, 0, 0, 0.354);
          border-right: 1px solid rgba(0, 0, 0, 0.354);
      }

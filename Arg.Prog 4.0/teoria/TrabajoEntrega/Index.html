@@ -4,8 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Presentacion CV</title>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/pngtree-vector-cv-icon-png-image_533303.ico.jpg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="complementos/estilos.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
 <!-- Para realizar este proyecto decidí utilizar el framework Bootstrap V 5.3 para obtener
      algunas facilidades y mejoras de cara a la presentación del trabajo.
@@ -14,17 +17,78 @@
             <!-- Zona de Arriba de todo -->
 
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10" id="lateralCentral">
-                <h1 id="tituloCV">MI CV</h1>
+            <div class="col-1">
             </div>
-            <div class="col-1"></div>
+            <div class="col-10" id="lateralCentral">
+                <h1 id="tituloCV">ArgentinaPrograma 4.0: Mi CV en html</h1>
+            </div>
+            <div class="col-1">
+                
+            </div>
         </div>
         <div class="row">
 
             <!-- Margen izquierdo -->
 
-            <div class="col-1" id="lateralesIzquierdos"> </div>
+            <div class="col-1" id="lateralesIzquierdos">
+
+                <!-- Barra de navegación -->
+                <nav>
+                    <div class="row">
+
+                        <p class="navegacion">Barra de Navegacion</p> 
+                        
+                        <ul type="circle" class="navegacion"> 
+
+                            <!-- General -->
+                            <li><a href="#titulo">General</a></li>
+                            
+                            <!-- Datos Generales -->
+                            <li><a href="#textoParaIconitos">Dirección</a></li>
+                            <li><a href="#textoParaIconitos">Telefono</a></li>
+                            <li><a href="#textoParaIconitos">E-Mail</a></li>
+                            <li><a href="#textoParaIconitos">Nacimiento</a></li>
+                        </ul>
+
+                        <!-- Objetivos -->
+                        <ul type="circle" class="navegacion">
+                            <li><a href="#objetivos">Objetivos</a></li>
+                        </ul>
+
+                        <!-- Skills -->                      
+                        <ul type="circle" class="navegacion">
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#skills">P.O.O</a></li>
+                            <li><a href="#skills">Lenguaje</a></li>
+                            <li><a href="#skills">Linux</a></li>
+                            <li><a href="#skills">Virtual Box</a></li>
+                            <li><a href="#skills">SQL</a></li>
+                            <li><a href="#skills">Office</a></li>
+                        </ul> 
+
+                        <!-- Experiencia -->  
+                        <ul type="circle" class="navegacion">
+                            <li><a href="#experiencia">Experiencia</a></li>
+                            <li><a href="#experiencia">Locutorio Hudson</a></li>
+                        </ul>
+
+                        <!-- Educacion -->  
+                        <ul type="circle" class="navegacion">
+                            <li><a href="#educacion">Educacion</a></li>
+                            <li><a href="#educacion">Universidad</a></li>
+                            <li><a href="#educacion">Secundario</a></li>
+                        </ul>
+
+                        <!-- Idiomas -->  
+                        <ul type="circle" class="navegacion">
+                            <li><a href="#idioma">Idiomas</a></li>
+                            <li><a href="#idioma">Ingles</a></li>
+                        </ul>
+                    </div>
+                    
+                </nav> 
+                <!-- Fin Barra de navegación -->  
+            </div>
 
             <!-- todo el cuerpo del proyecto -->
 
@@ -80,8 +144,10 @@
                                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/email.png" class="iconitosPrincipales" id="iconitos" float: left;>
                                     </div>
                                     <div class="col-11">
-                                        <p class="textoIconitos" id="textoParaIconitos">lucasgomez675@gmail.com</p>
-                                    </div>   
+                                        <!-- <p class="textoIconitos" id="textoParaIconitos" href = "mailto: lucasgomez675@gmail.com"> lucasgomez675@gmail.com</p> -->
+                                        <a class="textoIconitos" id="textoParaIconitos" href = "mailto: lucasgomez675@gmail.com"> lucasgomez675@gmail.com</a>
+                                    </div> 
+
                                 </div>
 
                                 <div class="row">
@@ -112,7 +178,7 @@
                     <div class="col-8"> 
                         <button class="acordeon" id="botonesTransparentes" style="overflow:visible;">
                             <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/objetivos.png" class="iconitosSubtitulos" float: left;>
-                                <h3 class="subtitulos">Objetivos</h3>
+                                <h3 class="subtitulos" id="objetivos">Objetivos</h3>
                         </button>
                         <div class="panel">
                             <div>
@@ -139,7 +205,7 @@
                     <!-- Skills -->
                     <button class="acordeon" id="botonesTransparentes">
                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/skills.png" class="iconitosSubtitulos" float: left;>
-                        <h3 class="subtitulos">Skills</h3>
+                        <h3 class="subtitulos" id="skills">Skills</h3>
                     </button>
                         <div class="panel">
 
@@ -152,7 +218,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills"" id="iconitos"float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Programación Orientada a objetos</span>
+                                <span class="listaspan textoParaIconitos" id="poo">Programación Orientada a objetos</span>
                                 </div>
                             </div>
 
@@ -163,7 +229,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills"" id="iconitos"float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Lenguajes de programación: C#, Python, JavaScript, Html, Css</span>
+                                <span class="listaspan textoParaIconitos">Lenguajes de programación: C#, Python, JavaScript, Html, Css</span>
                                 </div>    
                             </div>
 
@@ -174,7 +240,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills"" id="iconitos" float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Linux básico</span>
+                                <span class="listaspan textoParaIconitos">Linux básico</span>
                                 </div>  
                             </div>
 
@@ -185,7 +251,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills"" id="iconitos" float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Virtual Box</span>
+                                <span class="listaspan textoParaIconitos">Virtual Box</span>
                                 </div>
                             </div>
 
@@ -196,7 +262,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills"" id="iconitos" float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">MySQL</span>
+                                <span class="listaspan textoParaIconitos">MySQL</span>
                                 </div>
                             </div>
 
@@ -207,7 +273,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/tilde.png" class="iconitosSkills" id="iconitos" float: left;>
                                 </div>
                                 <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Microsoft Office: Word, Excel y Powerpoint</span>
+                                <span class="listaspan textoParaIconitos">Microsoft Office: Word, Excel y Powerpoint</span>
                                 </div>
                             </div>
                             
@@ -219,7 +285,7 @@
                     
                     <button class="acordeon" id="botonesTransparentes">
                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/experiencia.png" class="iconitosSubtitulos" float: left;>
-                        <h3 class="subtitulos">Experiencia</h3>
+                        <h3 class="subtitulos" id="experiencia">Experiencia</h3>
                     </button>
                     <div class="panel">
                         
@@ -243,7 +309,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/experienciaTrabajo.png" class="iconitosSkills" id="iconitos" float: left;>
                             </div>
                             <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Atencion al cliente</span>
+                                <span class="listaspan textoParaIconitos">Atencion al cliente</span>
                             </div> 
                         </div>
                         <div class="row">
@@ -251,7 +317,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/experienciaTrabajo.png" class="iconitosSkills" id="iconitos" float: left;>
                             </div>
                             <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Cobranza de servicios</span>
+                                <span class="listaspan textoParaIconitos">Cobranza de servicios</span>
                             </div> 
                         </div>
                         <div class="row">
@@ -259,7 +325,7 @@
                                 <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/experienciaTrabajo.png" class="iconitosSkills" id="iconitos" float: left;>
                             </div>
                             <div class="col-11">
-                                <span class="listaspan" id="textoParaIconitos">Venta de articulos</span>
+                                <span class="listaspan textoParaIconitos">Venta de articulos</span>
                             </div>
                         </div>
 
@@ -280,7 +346,7 @@
 
                     <button class="acordeon" id="botonesTransparentes">
                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/libro.png" class="iconitosSubtitulos" float: left;>
-                        <h3 class="subtitulos">Educacion</h3>
+                        <h3 class="subtitulos" id="educacion">Educacion</h3>
                     </button>
                     <div class="panel">
                         <div style="margin-top: 10px">
@@ -293,7 +359,7 @@
                                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/universidad.png" class="iconitosSkills" id="iconitos" float: left;>
                                     </div>
                                     <div class="col-11">
-                                        <h5 class="h5Educacion" id="textoParaIconitos">Ingeniería en informática (Univesitario)</h5>
+                                        <h5 class="h5Educacion textoParaIconitos">Ingeniería en informática (Univesitario)</h5>
                                     </div>
                                     
                                 </div>
@@ -316,7 +382,7 @@
                                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/secundario.png" class="iconitosSkills" id="iconitos" float: left;>
                                     </div>
                                     <div class="col-11">
-                                        <h5 class="h5Educacion" id="textoParaIconitos">Bachiller en artes visuales (Secundario)</h5>
+                                        <h5 class="h5Educacion textoParaIconitos">Bachiller en artes visuales (Secundario)</h5>
                                     </div>
                                     
                                 </div>
@@ -336,7 +402,7 @@
 
                     <button class="acordeon" id="botonesTransparentes">
                         <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/idioma.png" class="iconitosSubtitulos" float: left;>
-                        <h3 class="subtitulos">Idiomas</h3>
+                        <h3 class="subtitulos" id="idioma">Idiomas</h3>
                     </button>
                     <div class="panel">
                         <div style="margin-top: 10px">
@@ -345,7 +411,7 @@
                                     <img src="https://raw.githubusercontent.com/Lucasgomez14/arg-prom-4.0-frontend/main/Arg.Prog%204.0/teoria/TrabajoEntrega/imgpngs/ingles.png" class="iconitosSkills" id="iconitos" float: left;>
                                 </div>
                                 <div class="col-11">
-                                    <h5 class="h5Educacion" id="textoParaIconitos">Nivel de Inglés:</h5>
+                                    <h5 class="h5Educacion textoParaIconitos">Nivel de Inglés:</h5>
                                 </div>
                                 
                             </div>
@@ -356,6 +422,7 @@
                     </div>
 
                 <!-- Fin Main del proyecto-->
+                <!-- Fin del cuerpo del proyecto -->  
                 </main>
             </div>
 
@@ -366,4 +433,5 @@
         <script src="complementos/functions.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
     </body>
+    
 </html>
